@@ -25,12 +25,13 @@ And included in your Dockerfile like:
 ```
 
 ## Use in your code
->>> from dtic_topic_finder import dtic
->>> your_text = """Hypersonic vehicles can travel at Mach 5. 
-  Their aerodynamics cause heat that ionizes air into plasma around the hull. 
+```>>>from dtic_topic_finder import dtic
+>>>your_text = """Hypersonic vehicles can travel at Mach 5. \
+  Their aerodynamics cause heat that ionizes air into plasma around the hull. \ 
   Some use scramjets or ramjets for propulsion."""
->>> dtic(your_text)
-{'topics': [{'topic': 'PROPULSION, ENGINES AND FUELS; JET AND GAS TURBINE ENGINES; JET AND GAS TURBINE ENGINES', 'score': 2}, {'topic': 'AVIATION TECHNOLOGY; AIRCRAFT; RESEARCH AND EXPERIMENTAL AIRCRAFT', 'score': 1}, {'topic': 'SPACE TECHNOLOGY; UNMANNED SPACECRAFT; UNMANNED SPACECRAFT', 'score': 1}, {'topic': 'MECHANICAL, INDUSTRIAL, CIVIL AND MARINE ENGINEERING; SURFACE TRANSPORTATION AND EQUIPMENT; SURFACE TRANSPORTATION AND EQUIPMENT', 'score': 1}, {'topic': 'PHYSICS; THERMODYNAMICS; THERMODYNAMICS', 'score': 1}, {'topic': 'ATMOSPHERIC; ATMOSPHERIC PHYSICS; ATMOSPHERIC PHYSICS', 'score': 1}], 'terms': [{'term': 'HYPERSONIC VEHICLES', 'score': 1}, {'term': 'TRAVEL', 'score': 1}, {'term': 'HEAT', 'score': 1}, {'term': 'AIR', 'score': 1}, {'term': 'SCRAMJETS', 'score': 1}, {'term': 'RAMJETS', 'score': 1}]}
->>>  
+>>>dtic(your_text)
+>>>{'topics': [{'topic': 'PROPULSION, ENGINES AND FUELS; JET AND GAS TURBINE ENGINES; JET AND GAS TURBINE ENGINES', 'score': 2}, {'topic': 'AVIATION TECHNOLOGY; AIRCRAFT; RESEARCH AND EXPERIMENTAL AIRCRAFT', 'score': 1}, {'topic': 'SPACE TECHNOLOGY; UNMANNED SPACECRAFT; UNMANNED SPACECRAFT', 'score': 1}, {'topic': 'MECHANICAL, INDUSTRIAL, CIVIL AND MARINE ENGINEERING; SURFACE TRANSPORTATION AND EQUIPMENT; SURFACE TRANSPORTATION AND EQUIPMENT', 'score': 1}, {'topic': 'PHYSICS; THERMODYNAMICS; THERMODYNAMICS', 'score': 1}, {'topic': 'ATMOSPHERIC; ATMOSPHERIC PHYSICS; ATMOSPHERIC PHYSICS', 'score': 1}], 'terms': [{'term': 'HYPERSONIC VEHICLES', 'score': 1}, {'term': 'TRAVEL', 'score': 1}, {'term': 'HEAT', 'score': 1}, {'term': 'AIR', 'score': 1}, {'term': 'SCRAMJETS', 'score': 1}, {'term': 'RAMJETS', 'score': 1}]}```
+
+  
 
 
