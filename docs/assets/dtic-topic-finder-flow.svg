@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="695" viewBox="0 0 1440 695" role="img" aria-labelledby="title description">
+<title id="title">DTIC Topic Finder: vocabulary matching and topic aggregation</title>
+<desc id="description">A packaged mapping of 25,291 term entries supplies vocabulary tokens and term-to-topic paths. Input text is normalized and matched to phrases up to seven tokens, longest first without overlap. Occurrences contribute to mapped topic counts, which are ordered by category and subcategory totals. The callable returns limited topics and terms lists with integer counts, without a model or a live DTIC request.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#64748b"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#17263c}.title{font-size:34px;font-weight:700}.subtitle{font-size:21px;fill:#53647b}.label{font-size:22px;font-weight:700}.body{font-size:19px}.note{font-size:18px;fill:#53647b}.arrow{fill:none;stroke:#64748b;stroke-width:2.5;marker-end:url(#arrow)}</style>
+<rect width="1440" height="695" rx="24" fill="#f8fafc"/>
+<text x="48" y="59" class="title">DTIC Topic Finder · at a glance</text>
+<text x="48" y="96" class="subtitle">Local, vocabulary-based subject tagging · no model or live DTIC request</text>
+<rect x="496" y="145" width="550" height="128" rx="16" fill="#edf2ff" stroke="#7989bf" stroke-width="2"/>
+<text x="516" y="181" class="label">Bundled DTIC term → topic mapping</text>
+<text x="516" y="214" class="body">25,291 term entries · loaded at package import</text>
+<text x="516" y="243" class="note">Vocabulary tokens, phrase lengths, and topic paths</text>
+<path d="M582 273V314H446V350" class="arrow"/>
+<path d="M720 273V350" class="arrow"/>
+<path d="M972 273V314H994V350" class="arrow"/>
+
+<rect x="48" y="350" width="248" height="182" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="65" y="387" class="label">Input text</text>
+<text x="65" y="423" class="body">Python string</text>
+<text x="65" y="451" class="body">Supplied by caller</text>
+<text x="65" y="479" class="body">dtic(text, ...)</text>
+<rect x="322" y="350" width="248" height="182" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="339" y="387" class="label">Normalize</text>
+<text x="339" y="423" class="body">Uppercase + split</text>
+<text x="339" y="451" class="body">Remove . ; :</text>
+<text x="339" y="479" class="body">Unknown-token breaks</text>
+<rect x="596" y="350" width="248" height="182" rx="16" fill="#eaf7f4" stroke="#57a797" stroke-width="2"/>
+<text x="613" y="387" class="label">Match phrases</text>
+<text x="613" y="423" class="body">Up to 7 tokens</text>
+<text x="613" y="451" class="body">Longest first</text>
+<text x="613" y="479" class="body">Count without overlap</text>
+<rect x="870" y="350" width="248" height="182" rx="16" fill="#fff5e8" stroke="#d9a956" stroke-width="2"/>
+<text x="887" y="387" class="label">Aggregate + rank</text>
+<text x="887" y="423" class="body">Map counts to topics</text>
+<text x="887" y="451" class="body">Category / subgroup</text>
+<text x="887" y="479" class="body">Then full-topic totals</text>
+<rect x="1144" y="350" width="248" height="182" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1161" y="387" class="label">Return results</text>
+<text x="1161" y="423" class="body">topics + terms lists</text>
+<text x="1161" y="451" class="body">Integer count scores</text>
+<text x="1161" y="479" class="body">Default limit: 10 each</text>
+<path d="M296 441H321" class="arrow"/>
+<path d="M570 441H595" class="arrow"/>
+<path d="M844 441H869" class="arrow"/>
+<path d="M1118 441H1143" class="arrow"/>
+<rect x="32" y="571" width="1376" height="96" rx="16" fill="#17263c"/>
+<text x="52" y="607" style="font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:700;fill:#ffffff">Scores are occurrence counts; topic rows follow the hierarchy rather than a global score sort.</text>
+<text x="52" y="640" style="font-family:Arial,Helvetica,sans-serif;font-size:19px;fill:#dce7f5">One term may contribute to several topics. Limits apply after matching: −1 returns all; 0 returns none.</text>
+</svg>
